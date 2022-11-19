@@ -15,9 +15,6 @@ class Loginviewset(viewsets.ViewSet):
     def list(self, request):
         permission_classes = (AllowAny,)
         serializer_class = LoginSerializer
-        # serialize = serializers.serialize("json", serializer_class)
-        # return Response(serialize, status=status.HTTP_200_OK)
-        # return JsonResponse(serialize, safe=False)
     
 class MyObtainTokenPairView(TokenObtainPairView):
     permission_classes = (AllowAny,)
